@@ -8,6 +8,7 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/my-health-report/my-health-report.esm.js",
+  "private": false,
   "exports": {
     ".": {
       "import": "./dist/my-health-report/my-health-report.esm.js",
@@ -33,10 +34,14 @@
   ],
   "scripts": {
     "build": "stencil build",
+    "prepublishOnly": "pnpm build",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
+  },
+   "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@stencil/core": "^4.27.1",
