@@ -1,6 +1,6 @@
 {
   "name": "@badagogi/my-health-report",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -19,7 +19,7 @@
       "import": "./dist/components/my-component.js",
       "types": "./dist/components/my-component.d.ts"
     },
-     "./dist/components/*": "./dist/components/*",
+    "./dist/components/*": "./dist/components/*",
     "./loader": {
       "import": "./loader/index.js",
       "require": "./loader/index.cjs",
